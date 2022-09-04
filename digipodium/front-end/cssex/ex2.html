@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Ex 2</title>
+
+    <style>
+        html{
+            background-color: blanchedalmond;
+        }
+        h1{
+            color: brown;
+            text-align: center;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .name{
+            margin: 1rem;
+
+        }
+        .submit{
+            margin: 1rem;
+            
+        }
+        .form{
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: chocolate;
+            margin: 1rem;
+            margin-left: 32%;
+            margin-top: 5%;
+            padding: 3.1rem;
+            color: whitesmoke;
+            box-shadow: 1rem 1rem #e77982;
+            border-radius: .3rem;
+            width: 25%;
+        }
+        .form:hover{
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: yellow;
+            margin: 1rem;
+            margin-left: 32%;
+            margin-top: 5%;
+            padding: 3.1rem;
+            color: green;
+            box-shadow: 1rem 1rem darkgreen;
+            border-radius: .3rem;
+            width: 25%;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Forms Example</h1>
+    <div class="form">
+        <form action="" method="post">
+            <div class="name">
+                <label for="name">Your Username: </label>
+                <input type="text" name="name" id="" required>
+            </div>
+            <div name="number">
+                <label for="pswrd">Your Password: </label>
+                <input type="password" name="pswrd" required>
+            </div>
+            <div >
+                <input class="submit" type="submit" value="Submit">
+            </div>
+        </form>
+</div>
+</body>
+</html>
