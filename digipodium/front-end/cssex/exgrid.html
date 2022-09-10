@@ -5,17 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grid Ex</title>
+    <style>
+        html{
+            background-color: blanchedalmond;
+        }
+        img{
+            
+            width: 65%;
+            box-shadow: 2px 2px #afaf23;
+            padding: 1rem;
+            scale: 0.5;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+        }
+        img:hover{
+            rotate: 10deg;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
-        <div class="image"><img src="" alt=""></div>
-        <div class="image"><img src="" alt=""></div>
-        <div class="image"><img src="" alt=""></div>
-        <div class="image"><img src="" alt=""></div>
-        <div class="image"><img src="" alt=""></div>
-        <div class="image"><img src="" alt=""></div>
-        <div class="image"><img src="" alt=""></div>
-        <div class="image"><img src="" alt=""></div>
+        <div class="image"><img src="../img/img1.jpg" alt=""></div>
+        <div class="image"><img src="../img/img2.jpeg" alt=""></div>
+        <div class="image"><img src="../img/img3.jpg" alt=""></div>
+        <div class="image"><img src="../img/img4.jpg" alt=""></div>
+        <div class="image"><img src="../img/img5.png" alt=""></div>
+        <div class="image"><img src="../img/img6.jpg" alt=""></div>
+        <div class="image"><img src="../img/img7.jpg" alt=""></div>
+        <div class="image"><img src="../img/img8.jpg" alt=""></div>
     </div>
 </body>
 </html>
