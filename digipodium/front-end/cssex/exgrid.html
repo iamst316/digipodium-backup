@@ -6,6 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grid Ex</title>
     <style>
+        @keyframes wobble{
+			from{
+				background-color: red;
+			}
+			to{
+				background-color: green;
+			}
+        }
         html{
             background-color: blanchedalmond;
         }
@@ -15,6 +23,8 @@
             box-shadow: 2px 2px #afaf23;
             padding: 1rem;
             scale: 0.5;
+            transition: all 250ms ease;
+            animation: wobble 5s ease 5s;
         }
         .container{
             display: grid;
@@ -23,6 +33,7 @@
         img:hover{
             rotate: 10deg;
         }
+        
     </style>
 </head>
 <body>
