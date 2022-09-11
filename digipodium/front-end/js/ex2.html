@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Ex 2</title>
+    <!-- <style>
+        html{
+            background-color: blanchedalmond;
+        }
+        .btn{
+            background-color: aquamarine;
+            box-shadow: 1px 1px blue;
+        }
+        .heading{
+            color: rgb(175, 62, 21);
+        }
+    </style> -->
+</head>
+<body>
+    <script>
+        let heading = document.querySelector('h1');
+        console.log(heading);
+
+        let btn= document.querySelector('.btn');
+        // console.log(btn);
+
+        function changeMsg(){
+            // console.log(btn, heading);
+            heading.innerText= "This is Updated";
+        }
+    </script>
+    
+    <h1 class="heading">This is Sample Heading</h1>
+    <button class="btn" onclick="changeMsg()">Click Here</button>
+</body>
+</html>

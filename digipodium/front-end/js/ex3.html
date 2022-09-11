@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Ex 3</title>
+    
+    <style>
+        form{
+            display: flex;
+            flex-wrap: wrap;
+            flex-flow: column;
+            padding: 1rem;
+            gap: .5rem;
+            margin: auto;
+            max-width: fit-content;
+        }
+        .add,.div,.diff,.prod{
+            border-radius: 300px;
+            width: 25px;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <label for="num1">Enter First Number</label>
+        <input type="number" name="num1" id="num1">
+        <label for="num2">Enter Second Number</label>
+        <input type="number" name="num2" id="num2">
+        <button class="add" onclick="Add()">+</button>
+        <button class="diff" onclick="Diff()">-</button>
+        <button class="prod" onclick="Prod()">X</button>
+        <button class="div" onclick="Div()">/</button>
+        <h4 class="answer">Answer: N/A</h4>
+    </form>
+    <script src="./main.js"></script>
+</body>
+</html>
