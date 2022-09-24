@@ -1,4 +1,5 @@
-
+{% extends 'layout/base.html' %}
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,31 +11,55 @@
         
         .box{
             background-color: blue;
+            padding:10px
         }
 
         .container{
             display: grid;
+            grid-template-columns: auto auto auto;
+            grid-gap: 10px;
+            padding: 10px;
+            background-color: tomato;
+
+        }
+        .small{
+            display: inline-flex;
+            background-color: yellow;
+            
+            
+        }
+        p{
+            background-color: violet;
         }
 
     </style>
 </head>
 
-{% extends 'layout/base.html' %}
+
 
 {% block content %}
     
     <body>
         <h1>About Homework</h1>
     <div class="container">
+        <div class="box">
+            <div class="small"><img src= "{% static '../static/img/img3.jpg' %}" alt=""></div>
+            <div class="small">B</div>
+        </div>
         <div class="box"><p>hi</p></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
+
+        <div class="box">
+            <div class="small">A</div>
+            <div class="small">B</div>
+        </div>
+        <div class="box"><p>hi</p></div>
+        <div class="box">
+            <div class="small">A</div>
+            <div class="small">B</div>
+        </div>
+        <div class="box"><p>hi</p></div>
+        
+        
     </div>
     </body>
     
