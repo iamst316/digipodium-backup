@@ -1,5 +1,6 @@
 from ast import For
 from unicodedata import name
+from unittest.util import _MAX_LENGTH
 from django.db import models
 from django.db.models import *
 
@@ -19,6 +20,8 @@ class Show(models.Model):
     rating= FloatField()
     seasons= IntegerField()
     created_at= DateTimeField(auto_now=True)
+    def __str__(self) -> str:
+        return self.title
 
 class Student(models.Model):
     name= CharField(max_length=35)
@@ -48,3 +51,19 @@ class Weather(models.Model):
 
     def __str__(self):
         return self.temp
+
+
+class Artist(models.Model):
+    name= CharField(max_length=30)
+    grammys= IntegerField()
+
+    def __str__(self) -> str:
+        return self.name
+
+class Song(models.Model):
+    name= CharField(max_length=50)
+    artist= ForeignKey('Artist', on_delete= DO_NOTHING)
+    release_date= DateField(auto_now=False, auto_now_add=False)
+
+    def __str__(self) -> str:
+        return self.name
